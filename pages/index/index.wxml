@@ -1,0 +1,6 @@
+<view class="container">
+  <view id="{{item.id}}" class="blogItem" bind:tap="toDetail" wx:for="{{blogList}}" wx:key="id">
+    <text class="title">{{item.title}}</text>
+    <image src="{{item.cover}}" />
+  </view>
+</view>

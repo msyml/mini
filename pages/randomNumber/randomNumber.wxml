@@ -1,0 +1,27 @@
+<view class="random">
+    <view class="form">
+        <view class="range">
+            <input model:value="{{min}}" class="left" placeholder="最小值" bindinput="handleInput" />
+            <text>~</text>
+            <input model:value="{{max}}" class="right" placeholder="最大值" bindinput="handleInput" />
+        </view>
+        <view class="count">
+            <text>生成数量</text>
+            <slider bindchange="handleChanging" bindchanging="handleChanging" value="geneCount" activeColor="#2e62cd" min="1" max="10" />
+            <text>{{geneCount}}个</text>
+        </view>
+        <view class="only">
+            <text>是否唯一：</text>
+            <switch checked="{{isOnly}}" color="#2e62cd" bindchange="handleSwitch" />
+        </view>
+        <view class="btn" bind:tap="generation">
+            <text>生成</text>
+        </view>
+    </view>
+    <view class="result">
+        <view class="alone" wx:if="{{randomNumber.length == 1}}">{{randomNumber[0]}}</view>
+        <view class="unAlone" wx:else>
+            <text wx:for="{{randomNumber}}" wx:key="index">{{item}}</text>
+        </view>
+    </view>
+</view>

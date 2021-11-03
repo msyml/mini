@@ -1,0 +1,29 @@
+.group {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  height: 100rpx;
+  border-top: 1px solid #eee;
+  line-height: 50rpx;
+}
+
+.item {
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.item text {
+  margin-top: -12rpx;
+}
+
+.item icon {
+  font-size: 48rpx;
+  margin-top: 16rpx;
+}
+
+.checked {
+  color: #2e62cd;
+}

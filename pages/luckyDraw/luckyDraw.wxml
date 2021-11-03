@@ -1,0 +1,18 @@
+<view class="body">
+    <view class="form">
+        <view class="form-item">
+            <text class="label">奖品与概率设置</text>
+            <view class="inputs" wx:for="{{itemGroup}}" wx:key="index">
+                <text class="iconfont icon-mingcheng"></text>
+                <input value="{{item.name}}" placeholder="奖品名称" />
+                <text class="iconfont icon-gaishuai"></text>
+                <input value="{{item.probability}}" placeholder="奖品概率" />
+                <text bind:tap="lessItem" id="{{index}}">一</text>
+            </view>
+            <view class="all">
+                <text bindtap="addItem" class="iconfont icon-jia"></text>
+                <text>总计：{{allCount}}</text>
+            </view>
+        </view>
+    </view>
+</view>

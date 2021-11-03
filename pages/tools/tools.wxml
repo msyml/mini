@@ -1,0 +1,10 @@
+<view class="head">
+    <icon class="iconfont icon-search" />
+    <input class="search_input" placeholder="在此输入要查找的工具名" />
+    <icon class="iconfont icon-caidan" />
+</view>
+<scroll-view class="scroll" scroll-y="{{true}}" enable-flex >
+    <view class="item" data-path="{{item.path}}" wx:for="{{toolList}}" bindtap="toToolPage" wx:key="path">
+        {{item.text}}
+    </view>
+</scroll-view>

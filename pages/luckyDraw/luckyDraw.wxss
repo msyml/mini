@@ -1,0 +1,41 @@
+.body {
+    background: #fff;
+    padding: 0 8rpx;
+}
+
+.form .form-item {
+    display:flex;
+    flex-direction:column;
+}
+
+.form .form-item .label{
+    text-align: center;
+}
+
+.form-item .inputs {
+    display:flex;
+    padding: 8rpx;
+}
+
+.form-item .inputs text {
+    color: black;
+    font-size:48rpx;
+    height: 80rpx;
+    line-height:80rpx;
+    width: 80rpx;
+    background: #eeeee7;
+    text-align: center;
+}
+
+.form-item .inputs input{
+    background: #eee;
+    height:80rpx;
+    padding-left: 16rpx;
+    border-radius: 8rpx;
+    line-height:80rpx;
+}
+
+.form-item .all{
+    display:flex;
+    flex-direction: row-reverse;
+}

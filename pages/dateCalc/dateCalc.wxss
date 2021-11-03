@@ -1,0 +1,40 @@
+.root {
+    background: #f5f5f5;
+    height: calc(100% - 96rpx);
+    padding: 48rpx 0;
+}
+
+.card {
+    background: #ffffff;
+    margin: 0 32rpx 48rpx 32rpx;
+    height: 380rpx;
+    box-shadow: 5rpx 5rpx 5rpx #ddd;
+    padding: 32rpx;
+}
+
+.card .title {
+    font-weight: bold;
+}
+
+.card .content {
+    display:flex;
+    padding: 64rpx;
+    line-height: 80rpx;
+    flex-direction: column;
+}
+
+.card .content view .iconfont {
+    color: #2e62cd;
+    font-size: 48rpx;
+}
+
+.card .footer {
+    float: right;
+    font-size: 28rpx;
+}
+
+.content view text {
+    padding-left: 24rpx;
+    line-height: 80rpx;
+    font-weight: bold;
+}

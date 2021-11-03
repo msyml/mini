@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "博客详情 ",
+          "pathName": "pages/detail/detail",
+          "query": "id=6472c598d51a8529f42e5680b90e6ed2",
+          "scene": null
+        },
+        {
+          "name": "关于",
+          "pathName": "pages/aboutMe/aboutMe",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

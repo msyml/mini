@@ -1,0 +1,6 @@
+<view class="group">
+    <view wx:for="{{list}}" wx:key="index" id="{{index}}" class="item {{active == index ? 'checked': ''}}" bindtap="handleTap">
+        <icon class="{{item.icon}}" />
+        <text>{{item.text}}</text>
+    </view>
+</view>

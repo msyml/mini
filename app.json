@@ -1,0 +1,40 @@
+{
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/tools/tools"
+      },
+      {
+        "pagePath": "pages/aboutMe/aboutMe"
+      }
+    ]
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/tools/tools",
+    "pages/dateCalc/dateCalc",
+    "pages/luckyDraw/luckyDraw",
+    "pages/randomNumber/randomNumber",
+    "custom-tab-bar/index",
+    "pages/aboutMe/aboutMe",
+    "pages/unitSalary/unitSalary",
+    "pages/eating/eating",
+    "pages/house/house",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

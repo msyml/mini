@@ -1,0 +1,40 @@
+.head {
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 8rpx;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.head .search_input {
+  height: 80rpx;
+  padding: 0 16rpx;
+  line-height: 80rpx;
+  flex: 1;
+}
+
+.head icon {
+  font-size: 42rpx;
+}
+
+.scroll {
+  max-height: calc(100vh - 182rpx);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.scroll .item {
+  font-size: 32rpx;
+  text-align: center;
+  background:#eee;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 12rpx 16rpx;
+  min-width: 320rpx;
+  box-shadow: 5rpx 5rpx 2rpx #888888;
+  max-width: 343rpx;  
+  border-radius: 16rpx;
+}

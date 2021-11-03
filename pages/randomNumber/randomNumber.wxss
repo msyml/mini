@@ -1,0 +1,91 @@
+.random {
+  padding: 8rpx 32rpx;
+}
+
+.random .form .range {
+  display: flex;
+}
+
+.form .range text {
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 80rpx;
+  text-align: center;
+  font-size: 48rpx;
+  background: #ddd;
+}
+
+.form .range input {
+  background: #eee;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 16rpx;
+}
+
+input.left {
+  border-top-left-radius: 16rpx;
+  border-bottom-left-radius: 16rpx;
+}
+
+input.right {
+  border-top-right-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+
+.form .count {
+  margin-top: 32rpx;
+  display: flex;
+}
+
+.form .count text {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.form .count slider {
+  flex: 1;
+}
+
+.form .only {
+  margin-top: 32rpx;
+}
+
+.form .btn {
+  background: #2e62cd;
+  color: white;
+  font-size: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 12rpx;
+  margin-top: 36rpx;
+}
+
+.form .btn:active {
+  background: #2e62cd77;
+}
+
+.result {
+    margin-top: 96rpx;
+}
+
+.result .alone{
+    text-align: center;
+    font-size: 64rpx;
+}
+
+.result .unAlone {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result .unAlone text {
+    min-width: 100rpx;
+    text-align: center;
+    margin: 8rpx 16rpx;
+    background: #eee;
+    font-size: 36rpx;
+    line-height:80rpx;
+    height: 80rpx;
+    border-radius: 16rpx;
+}

@@ -1,0 +1,38 @@
+<view class="root">
+    <view class="card">
+        <text class="title">计算日期差</text>
+        <view class="content">
+            <view>
+                <picker id="diffStartDate" mode="date" bindchange="bindDateChange">
+                    <icon class="iconfont icon-rili"></icon>
+                    <text>{{diffStartDate?diffStartDate:"起始日期"}}</text>
+                </picker>
+            </view>
+            <view>
+                <picker id="diffEndDate" mode="date" bindchange="bindDateChange">
+                    <icon class="iconfont icon-rili"></icon>
+                    <text>{{diffEndDate?diffEndDate:"结束日期"}}</text>
+                </picker>
+            </view>
+        </view>
+        <text wx:if="{{diff}}" class="footer">计算结果：相差{{diff}}天</text>
+    </view>
+    <view class="card">
+        <text class="title">计算日期</text>
+        <view class="content">
+            <view>
+                <picker id="calcDate" mode="date" bindchange="bindDateChange">
+                    <icon class="iconfont icon-rili"></icon>
+                    <text>{{calcDate?calcDate:"起始日期"}}</text>
+                </picker>
+            </view>
+            <view>
+                <picker id="number" range="{{range}}" mode="selector" bindchange="bindDateChange">
+                    <icon class="iconfont icon-shuzi"></icon>
+                    <text>{{number?number:"间隔天数"}}</text>
+                </picker>
+            </view>
+        </view>
+        <text wx:if="{{calcFinallyDate}}" class="footer">{{number}}天后是：{{calcFinallyDate}}</text>
+    </view>
+</view>
